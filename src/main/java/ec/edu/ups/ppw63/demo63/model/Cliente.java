@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 public class Cliente implements Serializable{
 	//@GeneratedValue
+    	private static final long serialVersionUID = 1L;
+
 	private int codigo;
 	private String dni;
 	private String nombre;

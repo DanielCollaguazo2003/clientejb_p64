@@ -1,32 +1,36 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>ec.edu.ups.sd64</groupId>
-  <artifactId>clientejb</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>ec.edu.ups.sd64</groupId>
+    <artifactId>clientejb</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
   
-  <dependencies>
-		<!-- https://mvnrepository.com/artifact/org.wildfly/wildfly-naming-client -->
-		<dependency>
-		    <groupId>org.wildfly</groupId>
-		    <artifactId>wildfly-naming-client</artifactId>
-		    <version>1.1.0.Final</version>
-		    <scope>provided</scope>
-		</dependency>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.wildfly/wildfly-naming-client -->
+        <dependency>
+            <groupId>org.wildfly</groupId>
+            <artifactId>wildfly-naming-client</artifactId>
+            <version>2.0.1.Final</version>
+        </dependency>
 		
-		<dependency>
-	        <groupId>org.wildfly.security</groupId>
-	        <artifactId>wildfly-elytron</artifactId>
-	        <version>1.11.2.Final</version> 
-	    </dependency>
+        <dependency>
+            <groupId>org.wildfly.security</groupId>
+            <artifactId>wildfly-elytron</artifactId>
+            <version>1.11.2.Final</version> 
+        </dependency>
 	
-	    <!-- JBoss EJB Client -->
-	    <dependency>
-	        <groupId>org.jboss</groupId>
-	        <artifactId>jboss-ejb-client</artifactId>
-	        <version>4.0.11.Final</version> 
-	    </dependency>
-
-    
+        <!-- JBoss EJB Client -->
+        <dependency>
+            <groupId>org.jboss</groupId>
+            <artifactId>jboss-ejb-client</artifactId>
+            <version>5.0.1.Final</version> 
+        </dependency>
+        
+        <dependency>
+            <groupId>org.apache.sshd</groupId>
+            <artifactId>sshd-core</artifactId>
+            <version>2.6.0</version> <!-- Debes usar la versión más reciente compatible con tu entorno -->
+        </dependency>
+        
     </dependencies>
 </project>
 
